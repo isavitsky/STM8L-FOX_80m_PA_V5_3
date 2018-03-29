@@ -1,0 +1,25 @@
+https://www.element14.com/community/thread/18176/l/how-do-i-change-all-fonts-to-vector-on-the-same-pcb-at-once?displayFullThread=true
+
+Two steps:  First smash all the parts to make sure you can access the
+part names, then change the font and ratio.
+
+
+To smash all the parts, try:
+    
+
+     display none tOrigin bOrigin;
+     group all;
+     smash (>0 0);
+     display last;
+
+
+To change the font and ratio, try:
+
+
+     display none tNames bNames;
+     group all;
+     change font vector (>0 0);
+     change ratio 15 (>0 0);
+     display last;
+
+ 
